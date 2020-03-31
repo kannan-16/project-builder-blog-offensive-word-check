@@ -2,8 +2,8 @@ package utility;
 
 import model.Blog;
 
-public class CheckBlogPost extends OffensiveWordsChecker implements OffensiveWordsInterface {
-	
+public class CheckBlogPost extends OffensiveWordsChecker implements OffensiveWordsInterface
+{
 	String a[]= {"a55hole","acrotomophilia","aeolus","ahole","alabama hot pocket","	alaskan pipeline","anal","anal impaler","anal leakage","analprobe",
 		      "anilingus","anus","apeshit","ar5e","areola", "areole","arian", "arrse", "arse"," arsehole"," aryan","ass", "ass fuck",
 		      		 " ass fuck"," ass hole"};
@@ -38,7 +38,7 @@ public class CheckBlogPost extends OffensiveWordsChecker implements OffensiveWor
 	}
 
 	@Override
-	boolean checkBlog(Blog blog) {
+	public boolean checkBlog(Blog blog) {
 		// TODO Auto-generated method stub
 		if((checkBlogTitle(blog))||(checkBlogDescription(blog)))
 			return false;
